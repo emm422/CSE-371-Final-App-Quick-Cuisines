@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="318dp"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:text="Recipe Quiz"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <RelativeLayout
+        android:id="@+id/sweet_btn"
+        android:layout_width="192dp"
+        android:layout_height="179dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/savory_btn"
+        app:layout_constraintTop_toBottomOf="@+id/website"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/sweet_img"
+            android:layout_width="125dp"
+            android:layout_height="84dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/sweet"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="350dp" />
+
+        <TextView
+            android:id="@+id/sweet"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Sweet"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/spicy_btn"
+        android:layout_width="192dp"
+        android:layout_height="179dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sweet_btn"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/spicy_img"
+            android:layout_width="139dp"
+            android:layout_height="97dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="21dp"
+            android:src="@drawable/spicy"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="350dp" />
+
+        <TextView
+            android:id="@+id/spicy"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Spicy"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/savory_btn"
+        android:layout_width="192dp"
+        android:layout_height="179dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/website"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/savory_img"
+            android:layout_width="125dp"
+            android:layout_height="84dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/savory"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="350dp" />
+
+        <TextView
+            android:id="@+id/savory"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Savory"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="556dp"
+        android:gravity="center"
+        android:text="Question 1/3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a meal type:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num"
+        app:layout_constraintVertical_bias="0.074" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

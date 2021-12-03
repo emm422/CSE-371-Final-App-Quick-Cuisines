@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quick Cuisines</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login_message"><u>Already registered? Sign in.</u></string>
+    <string name="register_message"><u>Need to register? Sign up.</u></string>
+    <string-array name="days">
+        <item>Select a Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+</resources>
